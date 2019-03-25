@@ -1,12 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
+   xmlns:cafr="http://www.xbrl.us/slg/cafr/2019-01-16"
+   xmlns="http://www.w3.org/1999/xhtml"
+   xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+   xmlns:ix="http://www.xbrl.org/2013/inlineXBRL"
+   xmlns:ixt="http://www.xbrl.org/inlineXBRL/transformation/2011-07-31"
+   xmlns:link="http://www.xbrl.org/2003/linkbase"
+   xmlns:negated="http://www.xbrl.org/2009/role/negated"
+   xmlns:net="http://www.xbrl.org/2009/role/net"
+   xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric"
+   xmlns:num="http://www.xbrl.org/dtr/type/numeric"
+   xmlns:xbrldi="http://xbrl.org/2006/xbrldi"
+   xmlns:xbrldt="http://xbrl.org/2005/xbrldt"
+   xmlns:xbrli="http://www.xbrl.org/2003/instance"
+   xmlns:xl="http://www.xbrl.org/2003/XLink"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://xbrl.org/2006/xbrldi http://www.xbrl.org/2006/xbrldi-2006.xsd http://www.xbrl.org/2003/instance http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd">
+	
+<head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
 
-<head>
 	<title>
 		Orinda 2018 CAFR Demo
 	</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<script type='text/javascript' src='http://govwiki.info/xbrl/Images/joffe.js'> </script>
+	<script type='text/javascript' src='https://www.blinkace.com/ixbrl-inspector/v2/es6-shim.js'> </script>
+	<script type='text/javascript' src='https://code.jquery.com/jquery-1.12.0.min.js'> </script>
+	<script type='text/javascript' src='https://cdn.jsdelivr.net/interact.js/1.2.6/interact.min.js'> </script>
+	<script type='text/javascript' src='https://www.blinkace.com/ixbrl-inspector/v2/ixbrl-inspector.min.js'> </script>
 
 	<link rel="icon" href="img/favicon.png">
 	<link type="text/css" rel="stylesheet" href="css/content.css">
@@ -120,9 +146,9 @@
 					<br><br>
 					<div class="text-center" style="font-size: 2em;">
 						<b>
-							City of Orinda, California <br>
+							<ix:nonNumeric name="cafr:NameOfGovernment" contextRef="_ctx6p" id="HEADER_01">City of Orinda, California </ix><br>
 							Comprehensive Annual Financial Report<br>
-							For the Fiscal Year Ended June 30, 2018
+							For the Fiscal Year Ended <ix:nonNumeric name="cafr:FiscalEndDate" contextRef="_ctx6p" id="HEADER_02">June 30, 2018</ix>
 						</b>
 					</div>
 					<div class="text-center">
@@ -2000,6 +2026,172 @@
 			});
 		});
 	</script>
+
+<div style="display:none">
+ <ix:header>
+ <ix:references>
+      <link:schemaRef xlink:type="simple"  xlink:href="https://raw.githubusercontent.com/xbrlus/cafr/master/cafr_2019-01-16.xsd"></link:schemaRef>
+ </ix:references>
+ <ix:resources>
+   <xbrli:unit id="ISO4217_USD">
+      <xbrli:measure>iso4217:USD</xbrli:measure>
+   </xbrli:unit>
+   
+   <xbrli:context id="_ctx1">
+      <xbrli:entity><xbrli:identifier scheme="http://www.govwiki.info">05200740100000</xbrli:identifier></xbrli:entity>
+      <xbrli:period><xbrli:startDate>2017-07-01</xbrli:startDate><xbrli:endDate>2018-06-30</xbrli:endDate></xbrli:period>
+   </xbrli:context>
+   
+   <xbrli:context id="_ctx2">
+      <xbrli:entity><xbrli:identifier scheme="http://www.govwiki.info">05200740100000</xbrli:identifier></xbrli:entity>
+      <xbrli:period><xbrli:instant>2018-06-30</xbrli:instant></xbrli:period>
+   </xbrli:context>
+   
+   <xbrli:context id="_ctx3g">
+      <xbrli:entity><xbrli:identifier scheme="http://www.govwiki.info">05200740100000</xbrli:identifier>
+         <xbrli:segment>
+            <xbrldi:explicitMember dimension="cafr:FinancialReportingEntityAxis">cafr:PrimaryGovernmentActivitiesMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:BasisOfAccountingAxis">cafr:AccrualBasisOfAccountingMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:ActivityTypeAxis">cafr:GovernmentalTypeActivityMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:LiquidityAxis">cafr:CurrentMember</xbrldi:explicitMember>
+         </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period><xbrli:instant>2018-06-30</xbrli:instant></xbrli:period>
+   </xbrli:context>
+   
+   <xbrli:context id="_ctx3">
+      <xbrli:entity><xbrli:identifier scheme="http://www.govwiki.info">05200740100000</xbrli:identifier>
+         <xbrli:segment>
+            <xbrldi:explicitMember dimension="cafr:FinancialReportingEntityAxis">cafr:PrimaryGovernmentActivitiesMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:BasisOfAccountingAxis">cafr:AccrualBasisOfAccountingMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:LiquidityAxis">cafr:CurrentMember</xbrldi:explicitMember>
+         </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period><xbrli:instant>2018-06-30</xbrli:instant></xbrli:period>
+   </xbrli:context>
+   
+   <xbrli:context id="_ctx4">
+      <xbrli:entity><xbrli:identifier scheme="http://www.govwiki.info">05200740100000</xbrli:identifier>
+         <xbrli:segment>
+            <xbrldi:explicitMember dimension="cafr:FinancialReportingEntityAxis">cafr:PrimaryGovernmentActivitiesMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:BasisOfAccountingAxis">cafr:AccrualBasisOfAccountingMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:ActivityTypeAxis">cafr:GovernmentalTypeActivityMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:LiquidityAxis">cafr:CurrentMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:ClassificationOfDueToDueFromAxis">cafr:OtherGovernmentMember</xbrldi:explicitMember>
+         </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period><xbrli:instant>2018-06-30</xbrli:instant></xbrli:period>
+   </xbrli:context>
+   
+   <xbrli:context>
+      <xbrli:context id="_ctx5g">
+      <xbrli:entity><xbrli:identifier scheme="http://www.govwiki.info">05200740100000</xbrli:identifier>
+         <xbrli:segment>
+            <xbrldi:explicitMember dimension="cafr:FinancialReportingEntityAxis">cafr:PrimaryGovernmentActivitiesMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:BasisOfAccountingAxis">cafr:AccrualBasisOfAccountingMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:ActivityTypeAxis">cafr:GovernmentalTypeActivityMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:LiquidityAxis">cafr:NoncurrentMember</xbrldi:explicitMember>
+         </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period><xbrli:instant>2018-06-30</xbrli:instant></xbrli:period>
+   </xbrli:context>
+
+   <xbrli:context>
+	  <xbrli:context id="_ctx6g">
+      <xbrli:entity><xbrli:identifier scheme="http://www.govwiki.info">05200740100000</xbrli:identifier>
+         <xbrli:segment>
+            <xbrldi:explicitMember dimension="cafr:FinancialReportingEntityAxis">cafr:PrimaryGovernmentActivitiesMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:BasisOfAccountingAxis">cafr:AccrualBasisOfAccountingMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:ActivityTypeAxis">cafr:GovernmentalTypeActivityMember</xbrldi:explicitMember>
+         </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period><xbrli:instant>2018-06-30</xbrli:instant></xbrli:period>
+   </xbrli:context>
+  
+   <xbrli:context id="_ctx7">
+      <xbrli:entity><xbrli:identifier scheme="http://www.govwiki.info">05200740100000</xbrli:identifier>
+         <xbrli:segment>
+            <xbrldi:explicitMember dimension="cafr:FinancialReportingEntityAxis">cafr:PrimaryGovernmentActivitiesMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:BasisOfAccountingAxis">cafr:AccrualBasisOfAccountingMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:ActivityTypeAxis">cafr:GovernmentalTypeActivityMember</xbrldi:explicitMember>
+         </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period><xbrli:startDate>2017-07-01</xbrli:startDate><xbrli:endDate>2018-06-30</xbrli:endDate></xbrli:period>
+   </xbrli:context>
+   <xbrli:context id="_ctx8">
+      <xbrli:entity><xbrli:identifier scheme="http://www.govwiki.info">05200740100000</xbrli:identifier>
+         <xbrli:segment>
+            <xbrldi:explicitMember dimension="cafr:FinancialReportingEntityAxis">cafr:PrimaryGovernmentActivitiesMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:BasisOfAccountingAxis">cafr:AccrualBasisOfAccountingMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:ActivityTypeAxis">cafr:GovernmentalTypeActivityMember</xbrldi:explicitMember>
+         </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period><xbrli:instant>2017-07-01</xbrli:instant></xbrli:period>
+   </xbrli:context>
+   <xbrli:context id="_ctx9">
+      <xbrli:entity><xbrli:identifier scheme="http://www.govwiki.info">05200740100000</xbrli:identifier>
+         <xbrli:segment>
+            <xbrldi:explicitMember dimension="cafr:FinancialReportingEntityAxis">cafr:PrimaryGovernmentActivitiesMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:BasisOfAccountingAxis">cafr:ModifiedAccrualBasisOfAccountingMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:ActivityTypeAxis">cafr:GovernmentalTypeActivityMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:ClassificationOfFundTypeAxis">cafr:GeneralFundMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:MagnitudeAxis">cafr:MajorMember</xbrldi:explicitMember>
+         </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period><xbrli:instant>2018-06-30</xbrli:instant></xbrli:period>
+   </xbrli:context>
+   <xbrli:context id="_ctx10">
+      <xbrli:entity><xbrli:identifier scheme="http://www.govwiki.info">05200740100000</xbrli:identifier>
+         <xbrli:segment>
+            <xbrldi:explicitMember dimension="cafr:FinancialReportingEntityAxis">cafr:PrimaryGovernmentActivitiesMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:BasisOfAccountingAxis">cafr:ModifiedAccrualBasisOfAccountingMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:ActivityTypeAxis">cafr:GovernmentalTypeActivityMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:ClassificationOfFundTypeAxis">cafr:GeneralFundMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:MagnitudeAxis">cafr:MajorMember</xbrldi:explicitMember>
+         </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period><xbrli:startDate>2017-07-01</xbrli:startDate><xbrli:endDate>2018-06-30</xbrli:endDate></xbrli:period>
+   </xbrli:context>
+   <xbrli:context id="_ctx11">
+      <xbrli:entity><xbrli:identifier scheme="http://www.govwiki.info">05200740100000</xbrli:identifier>
+         <xbrli:segment>
+            <xbrldi:explicitMember dimension="cafr:FinancialReportingEntityAxis">cafr:PrimaryGovernmentActivitiesMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:BasisOfAccountingAxis">cafr:ModifiedAccrualBasisOfAccountingMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:ActivityTypeAxis">cafr:GovernmentalTypeActivityMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:ClassificationOfFundTypeAxis">cafr:GovernmentalFundsMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:MagnitudeAxis">cafr:MajorMember</xbrldi:explicitMember>
+         </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period><xbrli:instant>2018-06-30</xbrli:instant></xbrli:period>
+   </xbrli:context>
+   <xbrli:context id="_ctx12">
+      <xbrli:entity><xbrli:identifier scheme="http://www.govwiki.info">05200740100000</xbrli:identifier>
+         <xbrli:segment>
+            <xbrldi:explicitMember dimension="cafr:FinancialReportingEntityAxis">cafr:PrimaryGovernmentActivitiesMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:BasisOfAccountingAxis">cafr:ModifiedAccrualBasisOfAccountingMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:ActivityTypeAxis">cafr:GovernmentalTypeActivityMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:ClassificationOfFundTypeAxis">cafr:GovernmentalFundsMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:MagnitudeAxis">cafr:MajorMember</xbrldi:explicitMember>
+         </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period><xbrli:startDate>2017-07-01</xbrli:startDate><xbrli:endDate>2018-06-30</xbrli:endDate></xbrli:period>
+   </xbrli:context>
+   <xbrli:context id="_ctx13">
+      <xbrli:entity><xbrli:identifier scheme="http://www.govwiki.info">05200740100000</xbrli:identifier>
+         <xbrli:segment>
+            <xbrldi:explicitMember dimension="cafr:FinancialReportingEntityAxis">cafr:PrimaryGovernmentActivitiesMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:BasisOfAccountingAxis">cafr:ModifiedAccrualBasisOfAccountingMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:ActivityTypeAxis">cafr:GovernmentalTypeActivityMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:ClassificationOfFundTypeAxis">cafr:GeneralFundMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:MagnitudeAxis">cafr:MajorMember</xbrldi:explicitMember>
+         </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period><xbrli:instant>2017-07-01</xbrli:instant></xbrli:period>
+   </xbrli:context>
+ </ix:resources>
+ </ix:header>
+ </div>
+	
 </body>
 
 </html>
