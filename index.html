@@ -146,8 +146,8 @@
 					<br><br>
 					<div class="text-center" style="font-size: 2em;">
 						<b>
-							<ix:nonNumeric name="cafr:NameOfGovernment" contextRef="_ctx6p" id="HEADER_01">City of Orinda, California </ix><br>
-							Comprehensive Annual Financial Report<br>
+							City of Orinda</ix>, California
+							<br>Comprehensive Annual Financial Report<br>
 							For the Fiscal Year Ended <ix:nonNumeric name="cafr:FiscalEndDate" contextRef="_ctx6p" id="HEADER_02">June 30, 2018</ix>
 						</b>
 					</div>
@@ -160,7 +160,7 @@
 					</div>
 					<div class="text-center">
 						<h5>
-							City of Orinda -
+							City of <ix:nonNumeric name="cafr:NameOfGovernment" contextRef="_ctx6p" id="HEADER_01">Orinda</ix> -
 							22 Orinda Way, Orinda CA 94563
 							-
 							<a href="https://www.cityoforinda.org" target="_blank">www.cityoforinda.org</a>
@@ -304,7 +304,7 @@
 								<tr style="line-height: 10px;">
 									<td class="col-sm-1"></td>
 									<th style="border: 1px solid black; border-bottom: 0px; ">Total Assets</th>
-									<th style="border: 1px solid black;text-align: right;">130,105,913</th>
+									<th style="border: 1px solid black;text-align: right;"><ix:nonFraction name="cafr:Assets" contextRef="_ctx6g" id="NETPOSITION_C20" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">130,105,913</ix></th>
 								</tr>
 
 								<tr style="line-height: 5px;">
@@ -380,7 +380,7 @@
 								<tr style="line-height: 10px;">
 									<td class="col-sm-1"></td>
 									<td>Total OPEB liability (Note 11)</td>
-									<td style="text-align: right;">411 965</td>
+									<td style="text-align: right;"><ix:nonFraction name="cafr:NetOpebAssetLiability" contextRef="_ctx6g" id="NETPOSITION_C40" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">411,965</ix></td>
 								</tr>
 								<tr style="line-height: 10px;">
 									<td class="col-sm-1"></td>
@@ -390,7 +390,7 @@
 								<tr style="line-height: 10px;">
 									<td class="col-sm-1"></td>
 									<th style="border: 1px solid black; border-bottom: 0px; ">Total Liabilities</th>
-									<th style="border: 1px solid black;text-align: right;">57,824,423</th>
+									<th style="border: 1px solid black;text-align: right;"><ix:nonFraction name="cafr:Liabilities" contextRef="_ctx6g" id="NETPOSITION_C45" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">57,824,423</ix></th>
 								</tr>
 
 								<tr style="line-height: 15px;">
@@ -401,7 +401,7 @@
 								<tr style="line-height: 10px;">
 									<td class="col-sm-1"></td>
 									<th style="border: 1px solid black; border-bottom: 0px; ">Related to OPEB (Note 11)</th>
-									<th style="border: 1px solid black;text-align: right;">16 738</th>
+									<th style="border: 1px solid black;text-align: right;">16,738</th>
 								</tr>
 
 								<tr style="line-height: 5px;">
@@ -412,7 +412,7 @@
 								<tr style="line-height: 10px;">
 									<td class="col-sm-1"></td>
 									<td>Net investment in capital assets</td>
-									<td style="text-align: right;">52,843,727</td>
+									<td style="text-align: right;"><ix:nonFraction name="cafr:NetInvestmentInCapitalAssets" contextRef="_ctx6g" id="NETPOSITION_C50" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">52,843,727</ix></td>
 								</tr>
 								<tr style="line-height: 10px;">
 									<td class="col-sm-1"></td>
@@ -432,12 +432,12 @@
 								<tr style="line-height:10px;">
 									<td class="col-sm-1"></td>
 									<td>Unrestricted</td>
-									<td style="border: 1px solid black; border-right: 0; text-align: right;">8,723,981</td>
+									<td style="border: 1px solid black; border-right: 0; text-align: right;"><ix:nonFraction name="cafr:NetPositionUnrestricted" contextRef="_ctx6g" id="NETPOSITION_C55" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">8,723,981</ix></td>
 								</tr>
 								<tr style="line-height: 10px;">
 									<td class="col-sm-1"></td>
 									<th style="border: 1px solid black; border-bottom: 0px; ">Total net position</th>
-									<th style="border: 1px solid black;text-align: right;">$72,264,752</th>
+									<th style="border: 1px solid black;text-align: right;">$<ix:nonFraction name="cafr:NetPosition" contextRef="_ctx6p" id="NETPOSITION_C60" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">72,264,752</ix></th>
 								</tr>
 							</table>
 						</div>
