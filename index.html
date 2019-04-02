@@ -1,4 +1,5 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
 <html xml:lang="en"
    xmlns:cafr="http://www.xbrl.us/slg/cafr/2019-01-16"
    xmlns="http://www.w3.org/1999/xhtml"
@@ -17,30 +18,25 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://xbrl.org/2006/xbrldi http://www.xbrl.org/2006/xbrldi-2006.xsd http://www.xbrl.org/2003/instance http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"
->
+   xsi:schemaLocation="http://xbrl.org/2006/xbrldi http://www.xbrl.org/2006/xbrldi-2006.xsd http://www.xbrl.org/2003/instance http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd">
 	
 <head>
-
 	<title>
 		Orinda 2018 CAFR Demo
 	</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<!-- Comment out the next six lines when using the SEC viewer -->
 	<script type='text/javascript' src='http://govwiki.info/xbrl/Images/joffe.js'> </script>
 	<script type='text/javascript' src='https://www.blinkace.com/ixbrl-inspector/v2/es6-shim.js'> </script>
-	<script type='text/javascript' src='https://code.jquery.com/jquery-1.12.0.min.js'> </script>
+	<script type='text/javascript' src="js/jquery.js"></script>
+	<script type='text/javascript' src="js/bootstrap.min.js"></script>
 	<script type='text/javascript' src='https://cdn.jsdelivr.net/interact.js/1.2.6/interact.min.js'> </script>
 	<script type='text/javascript' src='https://www.blinkace.com/ixbrl-inspector/v2/ixbrl-inspector.min.js'> </script>
-	<!-- End of section to be commented out for SEC viewer -->
 
-	<link rel="icon" href="img/favicon.png">
-	<link type="text/css" rel="stylesheet" href="css/content.css">
-	<link type="text/css" rel="stylesheet" href="css/custom.css">
+	<link rel="icon" href="img/favicon.png" />
+	<link type="text/css" rel="stylesheet" href="css/content.css" />
+	<link type="text/css" rel="stylesheet" href="css/custom.css" />
 
-	<style>
+	<style type="text/css">
 		.borderless td,
 		.borderless th {
 			border: none;
@@ -145,24 +141,24 @@
 			<div class="col-sm-9">
 
 				<div id="section_1" style="border: 1px solid; border-left: 8px solid gray;" class="ui-tabs-panel">
-					<br><br>
+					<br /><br />
 					<div class="text-center" style="font-size: 2em;">
 						<b>
 							City of Orinda, California
-							<br>Comprehensive Annual Financial Report<br>
-							For the Fiscal Year Ended June 30, 2018
+							<br />Comprehensive Annual Financial Report<br />
+							For the Fiscal Year Ended <ix:nonNumeric name="cafr:FiscalEndDate" contextRef="CurrentInstant_GovernmentalActivities" format="ixt:datemonthdayyearen" id="HEADER_02">June 30, 2018</ix:nonNumeric>
 						</b>
 					</div>
 					<div class="text-center">
-						<img src="img/image.png" class="img-responsive" style="display: inline-block;" alt="city cover image">
+						<img src="img/image.png" class="img-responsive" style="display: inline-block;" alt="city cover image" />
 					</div>
 					<div class="text-center alert alert-warning">
-						NOT AN OFFICIAL DOCUMENT<br>
+						NOT AN OFFICIAL DOCUMENT<br />
 						For demonstration purposes only
 					</div>
 					<div class="text-center">
 						<h5>
-							City of Orinda -
+							City of <ix:nonNumeric name="cafr:NameOfGovernment" contextRef="CurrentInstant_GovernmentalActivities" id="HEADER_01">Orinda</ix:nonNumeric> -
 							22 Orinda Way, Orinda CA 94563
 							-
 							<a href="https://www.cityoforinda.org" target="_blank">www.cityoforinda.org</a>
@@ -174,12 +170,12 @@
 					<div class="row">
 						<div class="col-sm-1"></div>
 						<div class="col-sm-11" style="border: solid; text-align: center; margin-top: 13%;">CITY OF ORINDA</div>
-					</div> <br>
+					</div> <br />
 					<div class="row">
 						<div class="col-sm-3"></div>
 						<div class="col-sm-6" style="border: solid; text-align: center;">STATEMENT OF NET POSITION AND STATEMENT OF ACTIVITIES </div>
 						<div class="col-sm-3"></div>
-					</div> <br>
+					</div> <br />
 					<div class="row">
 						<div class="col-sm-1"></div>
 						<div class="col-sm-11">
@@ -202,8 +198,8 @@
 				<div id="section_3" style="display: none" class="ui-tabs-panel">
 					<div class="row">
 						<div class="col-sm-1"></div>
-						<div class="col-sm-11" style="text-align: center; margin-top: 9%">CITY OF ORINDA <br> STATEMENT OF NET POSITION <br> JUNE 30,2018</div>
-					</div> <br>
+						<div class="col-sm-11" style="text-align: center; margin-top: 9%">CITY OF ORINDA <br /> STATEMENT OF NET POSITION <br /> JUNE 30,2018</div>
+					</div> <br />
 					<div class="row">
 						<div class="col-sm-1"></div>
 						<div class="col-sm-11">
@@ -220,8 +216,8 @@
 								</tr>
 								<tr style="line-height: 5px;">
 									<td class="col-sm-2">Current Assets:</td>
-									<td>&nbsp;</td>
-									<td>&nbsp;</td>
+									<td>&#xA0;</td>
+									<td>&#xA0;</td>
 								</tr>
 								<tr style="line-height: 10px;">
 									<td></td>
@@ -306,7 +302,7 @@
 								<tr style="line-height: 10px;">
 									<td class="col-sm-1"></td>
 									<th style="border: 1px solid black; border-bottom: 0px; ">Total Assets</th>
-									<th style="border: 1px solid black;text-align: right;"><ix:nonFraction name="cafr:Assets" contextRef="_ctx6g" id="NETPOSITION_C20" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">130,105,913</ix></th>
+									<th style="border: 1px solid black;text-align: right;"><ix:nonFraction name="cafr:Assets" contextRef="CurrentInstant_GovernmentalActivities" id="NETPOSITION_C20" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">130,105,913</ix:nonFraction></th>
 								</tr>
 
 								<tr style="line-height: 5px;">
@@ -316,8 +312,8 @@
 								</tr>
 								<tr style="line-height: 5px;">
 									<td class="col-sm-2">Current Liabilities:</td>
-									<td>&nbsp;</td>
-									<td>&nbsp;</td>
+									<td>&#xA0;</td>
+									<td>&#xA0;</td>
 								</tr>
 								<tr style="line-height: 10px;">
 									<td></td>
@@ -352,7 +348,7 @@
 								<tr style="line-height: 10px;">
 									<td class="col-sm-1"></td>
 									<th style="border: 1px solid black; border-bottom: 0px; ">Total Current Liabilities</th>
-									<th style="border: 1px solid black; text-align: right;">5 810 097</th>
+									<th style="border: 1px solid black; text-align: right;">5,810,097</th>
 								</tr>
 								<tr style="line-height: 5px;">
 									<td>Noncurrent Liabilities:</td>
@@ -382,7 +378,7 @@
 								<tr style="line-height: 10px;">
 									<td class="col-sm-1"></td>
 									<td>Total OPEB liability (Note 11)</td>
-									<td style="text-align: right;"><ix:nonFraction name="cafr:NetOpebAssetLiability" contextRef="_ctx6g" id="NETPOSITION_C40" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">411,965</ix></td>
+									<td style="text-align: right;"><ix:nonFraction name="cafr:NetOpebAssetLiability" contextRef="CurrentInstant_GovernmentalActivities" id="NETPOSITION_C40" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">411,965</ix:nonFraction></td>
 								</tr>
 								<tr style="line-height: 10px;">
 									<td class="col-sm-1"></td>
@@ -392,7 +388,7 @@
 								<tr style="line-height: 10px;">
 									<td class="col-sm-1"></td>
 									<th style="border: 1px solid black; border-bottom: 0px; ">Total Liabilities</th>
-									<th style="border: 1px solid black;text-align: right;"><ix:nonFraction name="cafr:Liabilities" contextRef="_ctx6g" id="NETPOSITION_C45" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">57,824,423</ix></th>
+									<th style="border: 1px solid black;text-align: right;"><ix:nonFraction name="cafr:Liabilities" contextRef="CurrentInstant_GovernmentalActivities" id="NETPOSITION_C45" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">57,824,423</ix:nonFraction></th>
 								</tr>
 
 								<tr style="line-height: 15px;">
@@ -414,7 +410,7 @@
 								<tr style="line-height: 10px;">
 									<td class="col-sm-1"></td>
 									<td>Net investment in capital assets</td>
-									<td style="text-align: right;"><ix:nonFraction name="cafr:NetInvestmentInCapitalAssets" contextRef="_ctx6g" id="NETPOSITION_C50" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">52,843,727</ix></td>
+									<td style="text-align: right;"><ix:nonFraction name="cafr:NetInvestmentInCapitalAssets" contextRef="CurrentInstant_GovernmentalActivities" id="NETPOSITION_C50" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">52,843,727</ix:nonFraction></td>
 								</tr>
 								<tr style="line-height: 10px;">
 									<td class="col-sm-1"></td>
@@ -423,23 +419,23 @@
 								</tr>
 								<tr style="line-height: 10px;">
 									<td class="col-sm-1"></td>
-									<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Capital projects</td>
+									<td>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Capital projects</td>
 									<td style="text-align: right;">1,153,804</td>
 								</tr>
 								<tr style="line-height: 10px;">
 									<td class="col-sm-1"></td>
-									<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Special purpose projects</td>
+									<td>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; Special purpose projects</td>
 									<td style="text-align: right;">9,543,240</td>
 								</tr>
 								<tr style="line-height:10px;">
 									<td class="col-sm-1"></td>
 									<td>Unrestricted</td>
-									<td style="border: 1px solid black; border-right: 0; text-align: right;"><ix:nonFraction name="cafr:NetPositionUnrestricted" contextRef="_ctx6g" id="NETPOSITION_C55" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">8,723,981</ix></td>
+									<td style="border: 1px solid black; border-right: 0; text-align: right;"><ix:nonFraction name="cafr:NetPositionUnrestricted" contextRef="CurrentInstant_GovernmentalActivities" id="NETPOSITION_C55" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">8,723,981</ix:nonFraction></td>
 								</tr>
 								<tr style="line-height: 10px;">
 									<td class="col-sm-1"></td>
 									<th style="border: 1px solid black; border-bottom: 0px; ">Total net position</th>
-									<th style="border: 1px solid black;text-align: right;">$<ix:nonFraction name="cafr:NetPosition" contextRef="_ctx6g" id="NETPOSITION_C60" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">72,264,752</ix></th>
+									<th style="border: 1px solid black;text-align: right;">$<ix:nonFraction name="cafr:NetPosition" contextRef="CurrentInstant_GovernmentalActivities" id="NETPOSITION_C60" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">72,264,752</ix:nonFraction></th>
 								</tr>
 							</table>
 						</div>
@@ -449,8 +445,8 @@
 				<div id="section_4" style="display: none;" class="ui-tabs-panel">
 					<div class="row">
 						<div class="col-sm-1"></div>
-						<div class="col-sm-11" style="text-align: center; margin-top: 9%">CITY OF ORINDA <br> STATEMENT OF ACTIVITIES <br> FOR THE YEAR ENDED JUNE 30, 2018</div>
-					</div> <br>
+						<div class="col-sm-11" style="text-align: center; margin-top: 9%">CITY OF ORINDA <br /> STATEMENT OF ACTIVITIES <br /> FOR THE YEAR ENDED JUNE 30, 2018</div>
+					</div> <br />
 					<div class="row">
 						<div class="col-sm-1"></div>
 						<div class="col-sm-11">
@@ -522,19 +518,19 @@
 
 								<tr style="line-height: 10px;">
 									<td>Interest on bonds payable</td>
-									<td class="text-center" style="border-bottom: 1px solid black;">1,559,887</td>
-									<td style="border-bottom: 1px solid black;"></td>
-									<td style="border-bottom: 1px solid black;"></td>
-									<td style="border-bottom: 1px solid black;"></td>
-									<td class="text-center" style="border-bottom: 1px solid black;">(1,559,887)</td>
+									<td style="border-bottom: 1px solid black; text-align: right;">1,559,887</td>
+									<td style="border-bottom: 1px solid black; text-align: right;"></td>
+									<td style="border-bottom: 1px solid black; text-align: right;"></td>
+									<td style="border-bottom: 1px solid black; text-align: right;"></td>
+									<td style="border-bottom: 1px solid black; text-align: right;">(1,559,887)</td>
 								</tr>
 
 								<tr style="line-height: 10px;">
 									<th style="border: 1px solid black; border-bottom: 0px; ">Total primary government</th>
-									<td style="border: 1px solid black;text-align: right;">$16,895,566</td>
-									<td style="border: 1px solid black;text-align: right;">$6,323,620</td>
-									<td style="border: 1px solid black;text-align: right;">$902,369</td>
-									<td style="border: 1px solid black;text-align: right;">$756,620</td>
+									<td style="border: 1px solid black;text-align: right;">$<ix:nonFraction name="cafr:Expenses" contextRef="CurrentPeriod_GovernmentalActivities" id="ACTIVITIES_C10" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">16,895,566</ix:nonFraction></td>
+									<td style="border: 1px solid black;text-align: right;">$<ix:nonFraction name="cafr:ChargesForServices" contextRef="CurrentPeriod_GovernmentalActivities" id="ACTIVITIES_C11" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">6,323,620</ix:nonFraction></td>
+									<td style="border: 1px solid black;text-align: right;">$<ix:nonFraction name="cafr:OperatingGrantsAndContributions" contextRef="CurrentPeriod_GovernmentalActivities" id="ACTIVITIES_C12" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">902,369</ix:nonFraction></td>
+									<td style="border: 1px solid black;text-align: right;">$<ix:nonFraction name="cafr:CapitalGrantsAndContributions" contextRef="CurrentInstant_GovernmentalActivities" id="ACTIVITIES_C13" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">756,620</ix:nonFraction></td>
 									<td style="border: 1px solid black; text-align: right;">(8,912,957)</td>
 								</tr>
 
@@ -620,14 +616,14 @@
 									<td></td>
 									<th colspan="2">Total general revenues</th>
 									<td></td>
-									<td style="text-align: right;">15,394,548</td>
+									<td style="text-align: right;"><ix:nonFraction name="cafr:GeneralRevenues" contextRef="CurrentPeriod_GovernmentalActivities" id="ACTIVITIES_C51" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">15,394,548</ix:nonFraction></td>
 								</tr>
 								<tr style="line-height: 10px;">
 									<td></td>
 									<td></td>
 									<th colspan="2">Change in net position</th>
 									<td></td>
-									<td style="text-align: right;">6,481,591</td>
+									<td style="text-align: right;"><ix:nonFraction name="cafr:ChangeInNetPosition" contextRef="CurrentPeriod_GovernmentalActivities" id="ACTIVITIES_C61" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">6,481,591</ix:nonFraction></td>
 								</tr>
 								<tr style="line-height: 10px;">
 									<td></td>
@@ -653,16 +649,16 @@
 					<div class="row">
 						<div class="col-sm-1"></div>
 						<div class="col-sm-11" style="border: solid; text-align: center; margin-top: 13%">FUND FINANCIAL STATEMENTS </div>
-					</div> <br>
+					</div> <br />
 					<p style="margin-left: 7%;">Major funds are defined generally as having significant activities or balances in the current year. </p>
-					<br>
+					<br />
 
 					<div class="row">
 						<div class="col-sm-1"></div>
 						<div class="col-sm-11" style="border: solid; text-align: center;">GOVERNMENTAL FUNDS </div>
-					</div> <br>
+					</div> <br />
 					<p style="margin-left: 7%">The funds described below were determined to be Major Funds by the City for fiscal year 2018.
-						Individual other governmental funds may be found in the Supplemental Section. </p> <br>
+						Individual other governmental funds may be found in the Supplemental Section. </p> <br />
 
 					<div class="row">
 						<div class="col-sm-1"></div>
@@ -699,8 +695,8 @@
 				<div id="section_6" style="display: none;" class="ui-tabs-panel">
 					<div class="row">
 						<div class="col-sm-1"></div>
-						<div class="col-sm-11" style="text-align: center; margin-top: 9%">CITY OF ORINDA <br> GOVERNMENTAL FUNDS<br>BALANCE SHEET <br> JUNE 30, 2018</div>
-					</div> <br>
+						<div class="col-sm-11" style="text-align: center; margin-top: 9%">CITY OF ORINDA <br /> GOVERNMENTAL FUNDS<br />BALANCE SHEET <br /> JUNE 30, 2018</div>
+					</div> <br />
 					<div class="row">
 						<!-- <div class="col-sm-1"></div> -->
 						<div class="col-sm-12">
@@ -807,7 +803,7 @@
 								</tr>
 
 								<tr style="line-height: 10px;">
-									<th style="border: 1px solid black; border-bottom: 0px; ">Total assets</th>
+									<th style="border-right: 1px solid black; border-bottom: 0px; ">Total assets</th>
 									<td style="border: 1px solid black; text-align: right;">$11,281,300</td>
 									<td style="border: 1px solid black; text-align: right;">1,764,341</td>
 									<td style="border: 1px solid black;text-align: right;">$1,523,140</td>
@@ -889,7 +885,7 @@
 								</tr>
 
 								<tr style="line-height: 10px;">
-									<th style="border: 1px solid black; border-bottom: 0px; ">Total Liabilities</th>
+									<td style="border-right: 1px solid black; border-bottom: 0px; ">TOTAL LIABILITIES</td>
 									<td style="border: 1px solid black; text-align: right;">2,314,992</td>
 									<td style="border: 1px solid black; text-align: right;">41,835</td>
 									<td style="border: 1px solid black; text-align: right;"></td>
@@ -914,84 +910,84 @@
 
 								<tr style="line-height: 10px;">
 									<td>Nonspendable</td>
-									<td style="text-align: right;">49,122</td>
+									<td style="text-align: right;"><ix:nonFraction name="cafr:NonspendableFundBalance" contextRef="CurrentInstant_GeneralFund" id="GFBS_11" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">49,122</ix:nonFraction></td>
 									<td></td>
 									<td></td>
 									<td></td>
 									<td></td>
 									<td></td>
 									<td style="text-align: right;">109,123</td>
-									<td style="text-align: right;">158,245</td>
+									<td style="text-align: right;"><ix:nonFraction name="cafr:NonspendableFundBalance" contextRef="CurrentInstant_TotalGovernmentalFunds" id="GFBS_19" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">158,245</ix:nonFraction></td>
 								</tr>
 								<tr style="line-height: 10px;">
 									<td>Restricted</td>
-									<td></td>
+									<td style="text-align: right;color: white"><ix:nonFraction name="cafr:RestrictedFundBalance" contextRef="CurrentInstant_GeneralFund" id="GFBS_21" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">0</ix:nonFraction></td>
 									<td style="text-align: right;">949,259</td>
 									<td style="text-align: right;">$1,523,140</td>
 									<td style="text-align: right;">52,134</td>
 									<td style="text-align: right;">3,376,533</td>
 									<td style="text-align: right;">22,142,950</td>
 									<td style="text-align: right;">8,005,701</td>
-									<td style="text-align: right;">36,049,717</td>
+									<td style="text-align: right;"><ix:nonFraction name="cafr:RestrictedFundBalance" contextRef="CurrentInstant_TotalGovernmentalFunds" id="GFBS_29" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">36,049,717</ix:nonFraction></td>
 								</tr>
 								<tr style="line-height: 10px;">
 									<td>Assigned</td>
-									<td style="text-align: right;">1,895,656</td>
+									<td style="text-align: right;"><ix:nonFraction name="cafr:AssignedFundBalance" contextRef="CurrentInstant_GeneralFund" id="GFBS_31" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">1,895,656</ix:nonFraction></td>
 									<td></td>
 									<td></td>
 									<td></td>
 									<td></td>
 									<td></td>
 									<td></td>
-									<td style="text-align: right;">1,895,656</td>
+									<td style="text-align: right;"><ix:nonFraction name="cafr:AssignedFundBalance" contextRef="CurrentInstant_TotalGovernmentalFunds" id="GFBS_39" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">1,895,656</ix:nonFraction></td>
 								</tr>
 
 								<tr style="line-height: 10px;">
 									<td>Committed</td>
-									<td style="text-align: right;">5,586,807</td>
+									<td style="text-align: right;"><ix:nonFraction name="cafr:CommittedFundBalance" contextRef="CurrentInstant_GeneralFund" id="GFBS_41" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">5,586,807</ix:nonFraction></td>
 									<td style="text-align: right;">773,247</td>
 									<td></td>
 									<td></td>
 									<td></td>
 									<td></td>
 									<td style="text-align: right;">195,918</td>
-									<td style="text-align: right;">6,555,972</td>
+									<td style="text-align: right;"><ix:nonFraction name="cafr:CommittedFundBalance" contextRef="CurrentInstant_TotalGovernmentalFunds" id="GFBS_49" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">6,555,972</ix:nonFraction></td>
 								</tr>
 
 								<tr style="line-height: 10px;">
 									<td>Unassigned</td>
-									<td style="border-bottom: 1px solid black; text-align: right;">1,434,723</td>
+									<td style="border-bottom: 1px solid black; text-align: right;"><ix:nonFraction name="cafr:UnassignedFundBalance" contextRef="CurrentInstant_GeneralFund" id="GFBS_51" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">1,434,723</ix:nonFraction></td>
 									<td style="border-bottom: 1px solid black; text-align: right;"></td>
 									<td style="border-bottom: 1px solid black; text-align: right;"></td>
 									<td style="border-bottom: 1px solid black; text-align: right;"></td>
 									<td style="border-bottom: 1px solid black; text-align: right;"></td>
 									<td style="border-bottom: 1px solid black; text-align: right;"></td>
 									<td style="border-bottom: 1px solid black; text-align: right;"></td>
-									<td style="border-bottom: 1px solid black; text-align: right;">1,434,723</td>
+									<td style="border-bottom: 1px solid black; text-align: right;"><ix:nonFraction name="cafr:UnassignedFundBalance" contextRef="CurrentInstant_TotalGovernmentalFunds" id="GFBS_59" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">1,434,723</ix:nonFraction></td>
 								</tr>
 
 								<tr style="line-height: 10px;">
-									<th style="border: 1px solid black; border-bottom: 0px; ">Total fund balances</th>
-									<td style="border: 1px solid black; text-align: right;">8,966,308</td>
+									<th style="border-right: 1px solid black; border-bottom: 0px; ">Total fund balances</th>
+									<td style="border: 1px solid black; text-align: right;"><ix:nonFraction name="cafr:TotalFundBalance" contextRef="CurrentInstant_GeneralFund" id="GFBS_61" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">8,966,308</ix:nonFraction></td>
 									<td style="border: 1px solid black; text-align: right;">1,722,506</td>
 									<td style="border: 1px solid black; text-align: right;">1,523,140</td>
 									<td style="border: 1px solid black; text-align: right;">52,134</td>
 									<td style="border: 1px solid black; text-align: right;">3,376,533</td>
 									<td style="border: 1px solid black; text-align: right;">22,142,950</td>
 									<td style="border: 1px solid black; text-align: right;">8,310,742</td>
-									<td style="border: 1px solid black; text-align: right;">46,094,313</td>
+									<td style="border: 1px solid black; text-align: right;"><ix:nonFraction name="cafr:TotalFundBalance" contextRef="CurrentInstant_TotalGovernmentalFunds" id="GFBS_69" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">46,094,313</ix:nonFraction></td>
 								</tr>
 
 								<tr style="line-height: 10px;">
-									<th style="border: 1px solid black; border-bottom: 0px; ">Total liabilities and fund balance</th>
-									<td style="border: 1px solid black; border-right: 0; text-align: right;">$11,281,300</td>
-									<td style="border: 1px solid black; border-right: 0; text-align: right;">1,764,341</td>
-									<td style="border: 1px solid black; border-right: 0; text-align: right;">$1,523,140</td>
-									<td style="border: 1px solid black; border-right: 0; text-align: right;">$57,237</td>
-									<td style="border: 1px solid black; border-right: 0; text-align: right;">$4,281,386</td>
-									<td style="border: 1px solid black; border-right: 0; text-align: right;">$22,267,334</td>
-									<td style="border: 1px solid black; border-right: 0; text-align: right;">$8,707,412</td>
-									<td style="border: 1px solid black; border-right: 0; text-align: right;">$49,882,150</td>
+									<th style="border-right: 1px solid black; border-bottom: 0px; ">Total liabilities and fund balance</th>
+									<td style="border: 1px solid black; text-align: right;">$11,281,300</td>
+									<td style="border: 1px solid black; text-align: right;">1,764,341</td>
+									<td style="border: 1px solid black; text-align: right;">$1,523,140</td>
+									<td style="border: 1px solid black; text-align: right;">$57,237</td>
+									<td style="border: 1px solid black; text-align: right;">$4,281,386</td>
+									<td style="border: 1px solid black; text-align: right;">$22,267,334</td>
+									<td style="border: 1px solid black; text-align: right;">$8,707,412</td>
+									<td style="border: 1px solid black; text-align: right;">$49,882,150</td>
 								</tr>
 							</table>
 						</div>
@@ -1000,8 +996,8 @@
 
 				<div id="section_7" style="display: none" class="ui-tabs-panel">
 					<div class="row">
-						<div class="col-sm-12" style="text-align: center; margin-top: 9%">CITY OF ORINDA <br>Reconciliation of the<br>GOVERNMENTAL FUNDS-BALANCE SHEET<br>with the <br>STATEMENT OF NET POSITION <br> JUNE 30,2018</div>
-					</div> <br>
+						<div class="col-sm-12" style="text-align: center; margin-top: 9%">CITY OF ORINDA <br />Reconciliation of the<br />GOVERNMENTAL FUNDS-BALANCE SHEET<br />with the <br />STATEMENT OF NET POSITION <br /> JUNE 30,2018</div>
+					</div> <br />
 					<div class="row">
 						<div class="col-sm-12">
 							<table class="table table-bordered">
@@ -1014,7 +1010,7 @@
 									<td></td>
 								</tr>
 								<tr>
-									<td>CAPITAL ASSETS <br>
+									<td>CAPITAL ASSETS <br />
 										Capital assets have not been included in as financial resources in governmental fund activity:</td>
 									<td></td>
 								</tr>
@@ -1029,8 +1025,8 @@
 									</td>
 								</tr>
 								<tr>
-									<td>LONG-TERM ASSETS, DEFERRED INFLOW AND LIABILITIES <br>
-										The assets and liabilities below are not due and payable <br>in the current period and therefore
+									<td>LONG-TERM ASSETS, DEFERRED INFLOW AND LIABILITIES <br />
+										The assets and liabilities below are not due and payable <br />in the current period and therefore
 										are not reported in the Funds:</td>
 									<td>
 									</td>
@@ -1060,8 +1056,8 @@
 								<tr>
 									<td>
 										Internal service funds are used by management to charge the costs
-										of certain activities, <br> such as equipment management, to individual
-										funds.<br>The assets and liabilities of the internal service funds must
+										of certain activities, <br /> such as equipment management, to individual
+										funds.<br />The assets and liabilities of the internal service funds must
 										be added to the statement of net position.</td>
 									<td style="text-align: right;">1,337,283
 									</td>
@@ -1080,8 +1076,8 @@
 				<div id="section_8" style="display: none;" class="ui-tabs-panel">
 					<div class="row">
 						<div class="col-sm-1"></div>
-						<div class="col-sm-11" style="text-align: center; margin-top: 9%">CITY OF ORINDA <br>STATEMENT OF REVENUES, EXPENDITURES AND CHANGES IN FUND BALANCES<br>GOVERNMENTAL FUNDS<br> JUNE 30, 2018</div>
-					</div> <br>
+						<div class="col-sm-11" style="text-align: center; margin-top: 9%">CITY OF ORINDA <br />STATEMENT OF REVENUES, EXPENDITURES AND CHANGES IN FUND BALANCES<br />GOVERNMENTAL FUNDS<br /> JUNE 30, 2018</div>
+					</div> <br />
 					<div class="row">
 						<!-- <div class="col-sm-1"></div> -->
 						<div class="col-sm-12">
@@ -1351,14 +1347,14 @@
 
 								<tr style="line-height: 10px;">
 									<th style="border: 1px solid black; border-bottom: 0px; ">Total Revenues</th>
-									<td style="border: 1px solid black; text-align: right;">$14,898,308</td>
+									<td style="border: 1px solid black; text-align: right;">$<ix:nonFraction name="cafr:Revenues" contextRef="CurrentPeriod_GeneralFund" id="GFREFB_11" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">14,898,308</ix:nonFraction></td>
 									<td style="border: 1px solid black; text-align: right;">1,831,861</td>
 									<td style="border: 1px solid black; text-align: right;">10,164</td>
 									<td style="border: 1px solid black; text-align: right;">264,753</td>
 									<td style="border: 1px solid black; text-align: right;">370,614</td>
 									<td style="border: 1px solid black; text-align: right;">434,819</td>
 									<td style="border: 1px solid black; text-align: right;">5,558,760</td>
-									<td style="border: 1px solid black; text-align: right;">23,369,279</td>
+									<td style="border: 1px solid black; text-align: right;"><ix:nonFraction name="cafr:Revenues" contextRef="CurrentPeriod_TotalGovernmentalFunds" id="GFREFB_19" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">23,369,279</ix:nonFraction></td>
 								</tr>
 
 								<tr style="line-height: 10px;">
@@ -1562,14 +1558,14 @@
 
 								<tr style="line-height: 10px;">
 									<th style="border: 1px solid black; border-bottom: 0px; ">Total Expenditures</th>
-									<td style="border: 1px solid black; text-align: right;">11,931,667</td>
+									<td style="border: 1px solid black; text-align: right;"><ix:nonFraction name="cafr:Expenditures" contextRef="CurrentPeriod_GeneralFund" id="GFREFB_21" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">11,931,667</ix:nonFraction></td>
 									<td style="border: 1px solid black; text-align: right;">780,090</td>
 									<td style="border: 1px solid black; text-align: right;"></td>
 									<td style="border: 1px solid black; text-align: right;">490,345</td>
 									<td style="border: 1px solid black; text-align: right;">7,145,899</td>
 									<td style="border: 1px solid black; text-align: right;">2,498,329</td>
 									<td style="border: 1px solid black; text-align: right;">6,555,444</td>
-									<td style="border: 1px solid black; text-align: right;">29,401,774</td>
+									<td style="border: 1px solid black; text-align: right;"><ix:nonFraction name="cafr:Expenditures" contextRef="CurrentPeriod_TotalGovernmentalFunds" id="GFREFB_29" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">29,401,774</ix:nonFraction></td>
 								</tr>
 
 								<tr>
@@ -1633,16 +1629,15 @@
 
 								<tr style="line-height: 10px;">
 									<th>Total other financing sources (uses)</th>
-									<td style="text-align: right;">(938,948)</td>
+									<td style="text-align: right;">(<ix:nonFraction name="cafr:OtherFinancingSourcesAndUsesIncludingTransfers" contextRef="CurrentPeriod_GeneralFund" id="GFREFB_21" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal" sign="-">938,948</ix:nonFraction>)</td>
 									<td style="text-align: right;">1,400,000</td>
 									<td></td>
 									<td></td>
 									<td></td>
 									<td></td>
 									<td style="text-align: right;">(229,657)</td>
-									<td style="text-align: right;">231,395</td>
+									<td style="text-align: right;"><ix:nonFraction name="cafr:OtherFinancingSourcesAndUsesIncludingTransfers" contextRef="CurrentPeriod_TotalGovernmentalFunds" id="GFREFB_29" unitRef="ISO4217_USD" decimals = "0" format="ixt:numdotdecimal">231,395</ix:nonFraction></td>
 								</tr>
-
 								<tr style="line-height: 10px;">
 									<td>Net changes in fund balance</td>
 									<td style="text-align: right;">2,027,693</td>
@@ -1685,8 +1680,8 @@
 
 				<div id="section_9" style="display: none;" class="ui-tabs-panel">
 					<div class="row">
-						<div class="col-sm-12" style="text-align: center; margin-top: 9%">CITY OF ORINDA <br>Reconciliation of the<br>NET CHANGE IN FUND BALANCES - TOTAL GOVERNMENTAL FUNDS<br>with the <br>STATEMENT OF ACTIVITIES <br> JUNE 30,2018</div>
-					</div> <br>
+						<div class="col-sm-12" style="text-align: center; margin-top: 9%">CITY OF ORINDA <br />Reconciliation of the<br />NET CHANGE IN FUND BALANCES - TOTAL GOVERNMENTAL FUNDS<br />with the <br />STATEMENT OF ACTIVITIES <br /> JUNE 30,2018</div>
+					</div> <br />
 					<div class="row">
 						<div class="col-sm-12">
 							<table class="table table-bordered" style="width: 100%;">
@@ -1695,18 +1690,18 @@
 									<td style="text-align: right;">($5,801,100) </td>
 								</tr>
 								<tr style="line-height: 20px;">
-									<td><br>Amounts reported for governmental activities in the statement of <br>
+									<td><br />Amounts reported for governmental activities in the statement of <br />
 										activities are different because:</td>
 									<td></td>
 								</tr>
 								<tr style="line-height: 20px;">
-									<td>CAPITAL ASSETS TRANSACTIONS <br>
-										When capital assets that are to be used in governmental activities are purchased <br>
-										or constructed, the resources expended for those assets are reported as <br>
-										expenditures in governmental funds. However, in the statement of activities, <br>
-										the cost of those assets is allocated over their estimated useful lives and <br>reported
-										as depreciation expense. As a result, fund balance decreases by the amount of<br>
-										financial resources expenses, whereas net position decrease by the amount of<br>
+									<td>CAPITAL ASSETS TRANSACTIONS <br />
+										When capital assets that are to be used in governmental activities are purchased <br />
+										or constructed, the resources expended for those assets are reported as <br />
+										expenditures in governmental funds. However, in the statement of activities, <br />
+										the cost of those assets is allocated over their estimated useful lives and <br />reported
+										as depreciation expense. As a result, fund balance decreases by the amount of<br />
+										financial resources expenses, whereas net position decrease by the amount of<br />
 										depreciation expense charged for the year. </td>
 									<td></td>
 								</tr>
@@ -1722,10 +1717,10 @@
 									</td>
 								</tr>
 								<tr style="line-height: 20px;">
-									<td>LONG-TERM DEBT PROCEEDS AND PAYMENTS <br>
-										Bond proceeds provide current financial resources to governmental funds, but <br>
-										issuing debt increases long-term liabilities in the Statement of Net Position. <br>
-										Repayment of bond principal is an expenditure in the governmental funds, but <br>
+									<td>LONG-TERM DEBT PROCEEDS AND PAYMENTS <br />
+										Bond proceeds provide current financial resources to governmental funds, but <br />
+										issuing debt increases long-term liabilities in the Statement of Net Position. <br />
+										Repayment of bond principal is an expenditure in the governmental funds, but <br />
 										the repayment reduces long-term liabilities in the statement of net position. </td>
 									<td>
 									</td>
@@ -1743,9 +1738,9 @@
 								</tr>
 
 								<tr style="line-height: 20px;">
-									<td>ACCRUAL OF NON-CURRENT ITEMS <br>
-										The amounts below included in the Statement of Activities do not provide or<br>
-										require the use of current financial resources and therefore are not reported as <br>
+									<td>ACCRUAL OF NON-CURRENT ITEMS <br />
+										The amounts below included in the Statement of Activities do not provide or<br />
+										require the use of current financial resources and therefore are not reported as <br />
 										revenue of expenditures in governmental funds (net change). </td>
 									<td>
 									</td>
@@ -1766,7 +1761,7 @@
 								<tr>
 									<td>
 										Internal service funds are used by management to charge the costs of certain
-										activities, <br>such as equipment management, to individual funds.<br> The net
+										activities, <br />such as equipment management, to individual funds.<br /> The net
 										revenues (expenses) of the internal services funds is reported with
 										governmental activities. </td>
 									<td style="text-align: right;">(141,909)
@@ -1784,8 +1779,8 @@
 				</div>
 
 				<div style="margin: 50px 0;">
-					<a href="#" class="btn previous" id="pre_button">&laquo; Previous</a>
-					<a href="#section_2" class="btn next" id="next_button" style="float: right;">Next &raquo; </a>
+					<a href="#" class="btn previous" id="pre_button">&#171; Previous</a>
+					<a href="#section_2" class="btn next" id="next_button" style="float: right;">Next &#187; </a>
 				</div>
 			</div>
 
@@ -1797,50 +1792,49 @@
 							<h5>Table of contents</h5>
 
 							<ol class="list-unstyled">
-								<li class="" id="section-1"><a href="#section_1" data-rel="section_1">
+								<li id="section-1"><a href="#section_1" data-rel="section_1">
 
 										Cover page
 
 									</a>
 								</li>
 
-								<li class="" id="section-2"><a href="#section_2" data-rel="section_2">
+								<li id="section-2"><a href="#section_2" data-rel="section_2">
 										Government wide financial statements
 									</a>
 								</li>
 
-								<li class="" id="section-3"><a href="#section_3" data-rel="section-3">
+								<li id="section-3"><a href="#section_3" data-rel="section-3">
 										Statement Of Net Position
 									</a>
 								</li>
 
-								<li class="" id="section-4">
-									<a href="#section_4" data-rel="section-4">
+								<li id="section-4"><a href="#section_4" data-rel="section-4">
 										Statement Of Activities
 									</a>
 								</li>
 
-								<li class="" id="section-5"><a href="#section_5" data-rel="section-5">
+								<li id="section-5"><a href="#section_5" data-rel="section-5">
 										Fund Financial Statements
 									</a>
 								</li>
 
-								<li class="" id="section-6"><a href="#section_6" data-rel="section-6">
+								<li id="section-6"><a href="#section_6" data-rel="section-6">
 										Governmental Funds Balance Sheet
 									</a>
 								</li>
 
-								<li class="" id="section-7"><a href="#section_7" data-rel="section-7">
+								<li id="section-7"><a href="#section_7" data-rel="section-7">
 										Reconciliation Of the Governmental Funds balance Sheet With The Statement Of Net Position
 									</a>
 								</li>
 
-								<li class="" id="section-8"><a href="#section_8" data-rel="section-8">
+								<li id="section-8"><a href="#section_8" data-rel="section-8">
 										Statement Of Revenues, Expenditures And Changes In Fund Balances Governmental Funds
 									</a>
 								</li>
 
-								<li class="" id="section-9"><a href="#section_9" data-rel="section-9">
+								<li id="section-9"><a href="#section_9" data-rel="section-9">
 										Reconciliation of the Net Change in Fund balance-Total Governmental Funds with the Statement of Activities
 									</a>
 								</li>
@@ -1852,8 +1846,6 @@
 		</div>
 	</div>
 
-	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
 	<script>
 		$(document).ready(function() {
 
@@ -1904,8 +1896,8 @@
 					$('#section_8').css('display', 'none');
 					$('#section_2').css('display', 'none');
 				} else if (last_part == 'index.html#section_9') {
-					$("#next_button").attr("href", "#section_10");
-					$('#section_10').css('display', 'initial');
+					$("#next_button").attr("href", "#section_1");
+					$('#section_1').css('display', 'initial');
 					$('#section_9').css('display', 'none');
 					$('#section_2').css('display', 'none');
 				} else {
@@ -2034,23 +2026,13 @@
  <ix:references>
       <link:schemaRef xlink:type="simple"  xlink:href="https://raw.githubusercontent.com/xbrlus/cafr/master/cafr_2019-01-16.xsd"></link:schemaRef>
  </ix:references>
+ 
  <ix:resources>
    <xbrli:unit id="ISO4217_USD">
       <xbrli:measure>iso4217:USD</xbrli:measure>
    </xbrli:unit>
    
-   <xbrli:context id="_ctx1">
-      <xbrli:entity><xbrli:identifier scheme="http://www.govwiki.info">05200740100000</xbrli:identifier></xbrli:entity>
-      <xbrli:period><xbrli:startDate>2017-07-01</xbrli:startDate><xbrli:endDate>2018-06-30</xbrli:endDate></xbrli:period>
-   </xbrli:context>
-   
-   <xbrli:context id="_ctx2">
-      <xbrli:entity><xbrli:identifier scheme="http://www.govwiki.info">05200740100000</xbrli:identifier></xbrli:entity>
-      <xbrli:period><xbrli:instant>2018-06-30</xbrli:instant></xbrli:period>
-   </xbrli:context>
-   
-   <xbrli:context>
-	  <xbrli:context id="_ctx6g">
+   <xbrli:context id="CurrentInstant_GovernmentalActivities">
       <xbrli:entity><xbrli:identifier scheme="http://www.govwiki.info">05200740100000</xbrli:identifier>
          <xbrli:segment>
             <xbrldi:explicitMember dimension="cafr:FinancialReportingEntityAxis">cafr:PrimaryGovernmentActivitiesMember</xbrldi:explicitMember>
@@ -2060,8 +2042,62 @@
       </xbrli:entity>
       <xbrli:period><xbrli:instant>2018-06-30</xbrli:instant></xbrli:period>
    </xbrli:context>
-  
+   
+   <xbrli:context id="CurrentPeriod_GovernmentalActivities">
+      <xbrli:entity><xbrli:identifier scheme="http://www.govwiki.info">05200740100000</xbrli:identifier>
+         <xbrli:segment>
+            <xbrldi:explicitMember dimension="cafr:FinancialReportingEntityAxis">cafr:PrimaryGovernmentActivitiesMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:BasisOfAccountingAxis">cafr:AccrualBasisOfAccountingMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:ActivityTypeAxis">cafr:GovernmentalTypeActivityMember</xbrldi:explicitMember>
+         </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period><xbrli:startDate>2017-07-01</xbrli:startDate><xbrli:endDate>2018-06-30</xbrli:endDate></xbrli:period>
+   </xbrli:context>
 
+   <xbrli:context id="CurrentInstant_GeneralFund">
+      <xbrli:entity><xbrli:identifier scheme="http://www.govwiki.info">05200740100000</xbrli:identifier>
+         <xbrli:segment>
+            <xbrldi:explicitMember dimension="cafr:FinancialReportingEntityAxis">cafr:PrimaryGovernmentActivitiesMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:BasisOfAccountingAxis">cafr:ModifiedAccrualBasisOfAccountingMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:NameOfFundAxis">cafr:GeneralFundMember</xbrldi:explicitMember>
+         </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period><xbrli:instant>2018-06-30</xbrli:instant></xbrli:period>
+   </xbrli:context>
+
+   <xbrli:context id="CurrentPeriod_GeneralFund">
+      <xbrli:entity><xbrli:identifier scheme="http://www.govwiki.info">05200740100000</xbrli:identifier>
+         <xbrli:segment>
+            <xbrldi:explicitMember dimension="cafr:FinancialReportingEntityAxis">cafr:PrimaryGovernmentActivitiesMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:BasisOfAccountingAxis">cafr:ModifiedAccrualBasisOfAccountingMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:NameOfFundAxis">cafr:GeneralFundMember</xbrldi:explicitMember>
+         </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period><xbrli:startDate>2017-07-01</xbrli:startDate><xbrli:endDate>2018-06-30</xbrli:endDate></xbrli:period>
+   </xbrli:context>
+
+   <xbrli:context id="CurrentInstant_TotalGovernmentalFunds">
+      <xbrli:entity><xbrli:identifier scheme="http://www.govwiki.info">05200740100000</xbrli:identifier>
+         <xbrli:segment>
+            <xbrldi:explicitMember dimension="cafr:FinancialReportingEntityAxis">cafr:PrimaryGovernmentActivitiesMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:BasisOfAccountingAxis">cafr:ModifiedAccrualBasisOfAccountingMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:NameOfFundAxis">cafr:GovernmentalFundsMember</xbrldi:explicitMember>
+         </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period><xbrli:instant>2018-06-30</xbrli:instant></xbrli:period>
+   </xbrli:context>
+
+   <xbrli:context id="CurrentPeriod_TotalGovernmentalFunds">
+      <xbrli:entity><xbrli:identifier scheme="http://www.govwiki.info">05200740100000</xbrli:identifier>
+         <xbrli:segment>
+            <xbrldi:explicitMember dimension="cafr:FinancialReportingEntityAxis">cafr:PrimaryGovernmentActivitiesMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:BasisOfAccountingAxis">cafr:ModifiedAccrualBasisOfAccountingMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="cafr:NameOfFundAxis">cafr:GovernmentalFundsMember</xbrldi:explicitMember>
+         </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period><xbrli:startDate>2017-07-01</xbrli:startDate><xbrli:endDate>2018-06-30</xbrli:endDate></xbrli:period>
+   </xbrli:context>
+ 
  </ix:resources>
  </ix:header>
  </div>
